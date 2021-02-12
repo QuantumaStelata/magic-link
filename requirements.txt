@@ -1,0 +1,16 @@
+dj-database-url==0.5.0
+Django==3.1.6
+django-cleanup==4.0.0
+django-cors-headers==3.7.0
+django-filter==2.4.0
+django-heroku==0.3.1
+django-js-asset==1.2.2
+django-widget-tweaks==1.4.8
+send-mail==0.0.1
+gunicorn==20.0.4
+psycopg2==2.8.6
+psycopg2-binary==2.8.6
+py-postgresql==1.2.2
+requests==2.24.0
+urllib3==1.25.9
+whitenoise==5.2.0
