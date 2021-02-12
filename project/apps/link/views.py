@@ -31,13 +31,13 @@ def send_email(request):
     subject = 'Token'
     body = 'Your Token - {}\nYour link - 127.0.0.1:8000/{}'.format(token, token)
 
-    try:
-        email = EmailMessage(subject=subject, body=body, to=[user_email])
-        email.send()
+    # try:
+    email = EmailMessage(subject=subject, body=body, to=[user_email])
+    email.send()
 
-        Link.objects.create(email=user_email, token=token)
+    Link.objects.create(email=user_email, token=token)
 
-        return render(request, 'send_email.html', {'email': user_email})
-    except:
-        error = 'Error. Invalid email'
-        return render(request, 'error.html', {'error': error})
+    return render(request, 'send_email.html', {'email': user_email})
+    # except:
+    #     error = 'Error. Invalid email'
+    #     return render(request, 'error.html', {'error': error})
