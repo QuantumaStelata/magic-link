@@ -123,7 +123,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'quantumastelata.mail@gmail.com'
-EMAIL_HOST_PASSWORD = 'Vlad230500'
+EMAIL_HOST_PASSWORD = 'rhubqxlvizoibpqy'
 
 
 # Static files (CSS, JavaScript, Images)

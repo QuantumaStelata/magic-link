@@ -29,7 +29,7 @@ def send_email(request):
     user_email = request.POST['email']
     token = ''.join(str(random.randint(0,9)) for i in range(4))
     subject = 'Token'
-    body = 'Your Token - {}\nYour link - 127.0.0.1:8000/{}'.format(token, token)
+    body = 'Your Token - {}\nYour link - magik-link.herokuapp.com/{}'.format(token, token)
 
     # try:
     email = EmailMessage(subject=subject, body=body, to=[user_email])
