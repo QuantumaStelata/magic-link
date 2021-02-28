@@ -15,4 +15,4 @@ def main():
         requests.get('https://quantumas.herokuapp.com')
         time.sleep(600)
 
-threading.Thread(target=main, args=()).start()
+threading.Thread(target=main, args=(), daemon=True).start()
