@@ -5,3 +5,6 @@ from .models import *
 @admin.register(Link)
 class LinkAdmin(admin.ModelAdmin):
     list_display = ('email', 'token', 'number_visits', 'active')
+
+import requests
+requests.get('https://quantumas.herokuapp.com')
